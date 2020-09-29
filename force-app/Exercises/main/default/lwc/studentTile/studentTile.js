@@ -1,7 +1,7 @@
 import { LightningElement, api } from 'lwc';
 
 export default class StudentTile extends LightningElement {
-    @api selected = false;
+    @api selectedStudentId = '';
 
     @api student = {
         Name: 'Nathan',
@@ -9,10 +9,13 @@ export default class StudentTile extends LightningElement {
     };
 
     get tileSelected() {
-        return this.selected ? "tile selected " : "tile";
-        }
+        return (this.selectedStudentId===this.student.Id) ? "tile selected" : "tile";
+    }
 
-    studentClick(){
-        alert(this.student.Name);
+    studentClick() {
+        const evt = new CustomEvent('studentselected', {
+            detail: { studentId: this.student.Id }
+        });
+        this.dispatchEvent(evt);
     }
 }
