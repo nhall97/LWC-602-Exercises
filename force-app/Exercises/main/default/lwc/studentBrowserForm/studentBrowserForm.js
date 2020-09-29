@@ -8,27 +8,25 @@ export default class StudentBrowserForm extends LightningElement {
     @track delieveries = [];
     selectedDeliveryId = "";
 
-    @wire(getInstructors) wired_getInstructors ({error, data})
-    {
-       this.instructors = [];
-       if (data) {
-        this.instructors.push({
-            value: '',
-            label: 'Select an instructor'
-        });
-        data.forEach(instructor => {
+    @wire(getInstructors) wired_getInstructors({ error, data }) {
+        this.instructors = [];
+        if (data) {
             this.instructors.push({
-                value: instructor.Id,
-                label: instructor.Name
+                value: '',
+                label: 'Select an instructor'
             });
-        });
-       } else if (error) {
-           this.error = error;
-       }
+            data.forEach(instructor => {
+                this.instructors.push({
+                    value: instructor.Id,
+                    label: instructor.Name
+                });
+            });
+        } else if (error) {
+            this.error = error;
+        }
     }
 
-    @wire(getDeliveriesByInstructor, {instructorId : '$selectedInstructorId'}) wired_getDeliveriesByInstructor ({error, data})
-    {
+    @wire(getDeliveriesByInstructor, { instructorId: '$selectedInstructorId' }) wired_getDeliveriesByInstructor({ error, data }) {
         this.deliveries = [];
         if (data && data.length) {
             if (this.selectedInstructorId) {
@@ -51,5 +49,21 @@ export default class StudentBrowserForm extends LightningElement {
     onInstructorChange(event) {
         this.selectedDeliveryId = "";
         this.selectedInstructorId = event.target.value;
+        this.notifyParent();
+    }
+
+    onDeliveryChange(event) {
+        this.selectedDeliveryId = event.target.value;
+        this.notifyParent();
+    }
+
+    notifyParent() {
+        const evt = new CustomEvent('filterchange', {
+            detail: {
+                instructorId: this.selectedInstructorId,
+                deliveryId: this.selectedDeliveryId,
+            }
+        });
+        this.dispatchEvent(evt);
     }
 }

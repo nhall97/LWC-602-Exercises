@@ -1,7 +1,9 @@
 <template>
     <div class="slds-m-bottom_small">
         <lightning-card title="Filter Students" icon-name="utility:search">
+            
             <lightning-layout horizontal-align="center">
+
                 <!-- Instructors drop-down -->
                 <lightning-layout-item padding="around-small" size="4">
                     <lightning-combobox name="instructor" label="Select Instructor" variant="label-hidden"
@@ -13,7 +15,7 @@
                 <!-- Deliveries drop-down -->
                 <lightning-layout-item padding="around-small" size="4">
                     <lightning-combobox name="deliverySelector" label="Select
-                    Delivery" variant="label-hidden" value={selectedDeliveryId} placeholder="Select a delivery"
+                    Delivery" variant="label-hidden" value={selectedDeliveryId} placeholder="Select a delivery" onchange={onDeliveryChange}
                         options={deliveries}>
                     </lightning-combobox>
                 </lightning-layout-item>
