@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 <aura:component implements="flexipage:availableForAllPageTypes,
 force:lightningQuickAction" access="global">
 <c:deliveryListMap />
 </aura:component>
+=======
+<aura:component implements="flexipage:availableForAllPageTypes, force:lightningQuickAction" access="global">
+    <c:deliveryListMap />
+</aura:component>	
+>>>>>>> SLN_04/01.END

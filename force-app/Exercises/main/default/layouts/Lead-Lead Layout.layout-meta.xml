@@ -144,6 +144,14 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
+<<<<<<< HEAD
+=======
+            <actionName>Delivery_List_Action</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>0</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+>>>>>>> SLN_04/01.END
             <actionName>FeedItem.TextPost</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>1</sortOrder>
@@ -174,11 +182,14 @@
             <sortOrder>6</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+<<<<<<< HEAD
             <actionName>Delivery_List_Action</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>0</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+=======
+>>>>>>> SLN_04/01.END
             <actionName>NewEvent</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>7</sortOrder>
@@ -209,27 +220,47 @@
             <sortOrder>12</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+<<<<<<< HEAD
             <actionName>PrintableView</actionName>
+=======
+            <actionName>XClean</actionName>
+>>>>>>> SLN_04/01.END
             <actionType>StandardButton</actionType>
             <sortOrder>13</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+<<<<<<< HEAD
             <actionName>XClean</actionName>
+=======
+            <actionName>ChangeOwnerOne</actionName>
+>>>>>>> SLN_04/01.END
             <actionType>StandardButton</actionType>
             <sortOrder>14</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+<<<<<<< HEAD
             <actionName>Convert</actionName>
+=======
+            <actionName>ChangeRecordType</actionName>
+>>>>>>> SLN_04/01.END
             <actionType>StandardButton</actionType>
             <sortOrder>15</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+<<<<<<< HEAD
             <actionName>FindDup</actionName>
+=======
+            <actionName>Clone</actionName>
+>>>>>>> SLN_04/01.END
             <actionType>StandardButton</actionType>
             <sortOrder>16</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+<<<<<<< HEAD
             <actionName>Share</actionName>
+=======
+            <actionName>Convert</actionName>
+>>>>>>> SLN_04/01.END
             <actionType>StandardButton</actionType>
             <sortOrder>17</sortOrder>
         </platformActionListItems>
@@ -239,22 +270,38 @@
             <sortOrder>18</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+<<<<<<< HEAD
             <actionName>CreateCallList</actionName>
+=======
+            <actionName>FindDup</actionName>
+>>>>>>> SLN_04/01.END
             <actionType>StandardButton</actionType>
             <sortOrder>19</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+<<<<<<< HEAD
             <actionName>ChangeRecordType</actionName>
+=======
+            <actionName>CreateSurveyInvitation</actionName>
+>>>>>>> SLN_04/01.END
             <actionType>StandardButton</actionType>
             <sortOrder>20</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+<<<<<<< HEAD
             <actionName>StartOutboundConversation</actionName>
+=======
+            <actionName>Share</actionName>
+>>>>>>> SLN_04/01.END
             <actionType>StandardButton</actionType>
             <sortOrder>21</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+<<<<<<< HEAD
             <actionName>ChangeOwnerOne</actionName>
+=======
+            <actionName>PrintableView</actionName>
+>>>>>>> SLN_04/01.END
             <actionType>StandardButton</actionType>
             <sortOrder>22</sortOrder>
         </platformActionListItems>
@@ -264,11 +311,16 @@
             <sortOrder>23</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+<<<<<<< HEAD
             <actionName>Clone</actionName>
+=======
+            <actionName>CreateCallList</actionName>
+>>>>>>> SLN_04/01.END
             <actionType>StandardButton</actionType>
             <sortOrder>24</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
+<<<<<<< HEAD
             <actionName>CreateSurveyInvitation</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>25</sortOrder>
@@ -277,21 +329,38 @@
             <actionName>Delete</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>26</sortOrder>
+=======
+            <actionName>Delete</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>25</sortOrder>
+>>>>>>> SLN_04/01.END
         </platformActionListItems>
         <platformActionListItems>
             <actionName>CallHighlightAction</actionName>
             <actionType>ProductivityAction</actionType>
+<<<<<<< HEAD
             <sortOrder>27</sortOrder>
+=======
+            <sortOrder>26</sortOrder>
+>>>>>>> SLN_04/01.END
         </platformActionListItems>
         <platformActionListItems>
             <actionName>SmsHighlightAction</actionName>
             <actionType>ProductivityAction</actionType>
+<<<<<<< HEAD
             <sortOrder>28</sortOrder>
+=======
+            <sortOrder>27</sortOrder>
+>>>>>>> SLN_04/01.END
         </platformActionListItems>
         <platformActionListItems>
             <actionName>EmailHighlightAction</actionName>
             <actionType>ProductivityAction</actionType>
+<<<<<<< HEAD
             <sortOrder>29</sortOrder>
+=======
+            <sortOrder>28</sortOrder>
+>>>>>>> SLN_04/01.END
         </platformActionListItems>
     </platformActionList>
     <quickActionList>
@@ -386,7 +455,11 @@
     <showRunAssignmentRulesCheckbox>true</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
+<<<<<<< HEAD
         <masterLabel>00h0R000002rEG4</masterLabel>
+=======
+        <masterLabel>00h54000000rvQ9</masterLabel>
+>>>>>>> SLN_04/01.END
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

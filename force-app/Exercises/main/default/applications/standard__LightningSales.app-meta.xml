@@ -7,8 +7,13 @@
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <label>Sales</label>
     <navType>Standard</navType>
+<<<<<<< HEAD
     <tabs>Deliveries_Map</tabs>
     <tabs>standard-home</tabs>
+=======
+    <tabs>standard-home</tabs>
+    <tabs>Deliveries_Map</tabs>
+>>>>>>> SLN_04/01.END
     <tabs>standard-Opportunity</tabs>
     <tabs>standard-Lead</tabs>
     <tabs>standard-Task</tabs>

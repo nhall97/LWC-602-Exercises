@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>49.0</apiVersion>
     <isExposed>true</isExposed>
     <targets>
         <target>lightning__Tab</target>
     </targets>
+=======
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="layoutManager">
+    <apiVersion>49.0</apiVersion>
+    <isExposed>true</isExposed>
+	<targets>
+	    <target>lightning__Tab</target>
+	</targets>
+>>>>>>> SLN_04/01.END
 </LightningComponentBundle>

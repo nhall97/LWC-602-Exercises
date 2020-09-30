@@ -8,12 +8,11 @@ export default class DeliveryDetailMap extends LightningElement {
 	@api recordId;
 	name;
 	@track mapMarkers = [];
-	error;
 	
 	@wire(getRecord, { recordId: '$recordId', fields })
-	wiredMap({ error, data }) {
+	loadMap({ error, data }) {
 		if (error) {
-			this.error=error;
+			// TODO: handle error
 		} else if (data) {
 			// Get Map data
 			const City = this._getDisplayValue(data, FIELD_Course_Delivery__City);

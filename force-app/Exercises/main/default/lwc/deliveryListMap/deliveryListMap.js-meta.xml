@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>49.0</apiVersion>
     <isExposed>true</isExposed>
@@ -11,4 +12,18 @@
             <property name="markersTitle" label="List Title (if visible)" type="String" />
         </targetConfig>
     </targetConfigs>
+=======
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="deliveryListMap">
+    <apiVersion>49.0</apiVersion>
+    <isExposed>true</isExposed>
+	<targets>
+		<target>lightning__AppPage</target>
+	</targets>
+	<targetConfigs>
+		<targetConfig targets="lightning__AppPage">
+			<property name="listView" label="List View" type="String" datasource="visible,hidden" />
+			<property name="markersTitle" label="List Title (if visible)" type="String" />
+		</targetConfig>
+	</targetConfigs>
+>>>>>>> SLN_04/01.END
 </LightningComponentBundle>

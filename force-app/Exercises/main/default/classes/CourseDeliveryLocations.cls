@@ -1,6 +1,17 @@
 public with sharing class CourseDeliveryLocations {
-    @AuraEnabled
-    public static List<AggregateResult> getLocations(){
-        return [SELECT City__c, Country__c, COUNT(Id) numDeliveries FROM Course_Delivery__c group by City__c, Country__c];
-    }
+    @AuraEnabled(cacheable=true)
+	public static List<AggregateResult> getLocations() {
+		return [SELECT City__c, Country__c, COUNT(Id) numDeliveries FROM Course_Delivery__c WITH SECURITY_ENFORCED group by City__c, Country__c];
+	}
+
+	public List<AggregateResult> locationsVF {
+		get {
+			if (locationsVF == null) {
+				locationsVF = CourseDeliveryLocations.getLocations();
+				System.debug(locationsVF);
+			}
+			return locationsVF;
+		}
+		private set;
+	}
 }

@@ -1,8 +1,15 @@
 public with sharing class StudentBrowser {
+<<<<<<< HEAD
     @AuraEnabled(cacheable=true)
     public static List<Contact> getStudents(String instructorId, String courseDeliveryId)
     {
         String query = '';
+=======
+    
+	@AuraEnabled(cacheable=true)
+	public static List<Contact> getStudents(String instructorId, String courseDeliveryId) {
+		String query = '';
+>>>>>>> SLN_04/01.END
 		String scheckStatus = 'Status__c IN (\'Enrolled\', \'Completed\') ';
 
 		query += 'SELECT Id, Name, Email, Phone, Title, Account.Name, PhotoUrl FROM Contact ';
@@ -11,8 +18,17 @@ public with sharing class StudentBrowser {
 		} else if (instructorId != '') {
 			query += 'WHERE Id IN (SELECT Student__c FROM course_attendee__c WHERE course_delivery__r.Instructor__c = :instructorId AND ' + scheckStatus + ') ';
 		}
+<<<<<<< HEAD
 		query += 'ORDER BY Name';
 
 		return Database.query(query);
     }
+=======
+		query += 'WITH SECURITY_ENFORCED ';
+		query += 'ORDER BY Name';
+
+		return Database.query(query);
+	}
+	
+>>>>>>> SLN_04/01.END
 }

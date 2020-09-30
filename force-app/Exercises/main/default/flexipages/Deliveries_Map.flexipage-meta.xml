@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
     <flexiPageRegions>
+<<<<<<< HEAD
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -14,10 +15,24 @@
                 <componentName>deliveryListMap</componentName>
             </componentInstance>
         </itemInstances>
+=======
+         <itemInstances><componentInstance>
+            <componentInstanceProperties>
+                <name>listView</name>
+                <value>visible</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>markersTitle</name>
+                <value>Deliveries Worldwide</value>
+            </componentInstanceProperties>
+            <componentName>deliveryListMap</componentName>
+         </componentInstance></itemInstances>
+>>>>>>> SLN_04/01.END
         <name>region1</name>
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
+<<<<<<< HEAD
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -47,10 +62,40 @@
                 <componentName>flexipage:filterListCard</componentName>
             </componentInstance>
         </itemInstances>
+=======
+         <itemInstances><componentInstance>
+            <componentInstanceProperties>
+                <name>enableInlineEdit</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>entityName</name>
+                <value>Contact</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>filterName</name>
+                <value>AllContacts</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>hideActionBar</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>hideSearchBar</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>pageSize</name>
+                <value>3</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:filterListCard</componentName>
+         </componentInstance></itemInstances>
+>>>>>>> SLN_04/01.END
         <name>region2</name>
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
+<<<<<<< HEAD
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -60,6 +105,15 @@
                 <componentName>forceChatter:exposedFeed</componentName>
             </componentInstance>
         </itemInstances>
+=======
+         <itemInstances><componentInstance>
+            <componentInstanceProperties>
+                <name>context</name>
+                <value>NEWS</value>
+            </componentInstanceProperties>
+            <componentName>forceChatter:exposedFeed</componentName>
+         </componentInstance></itemInstances>
+>>>>>>> SLN_04/01.END
         <name>region3</name>
         <type>Region</type>
     </flexiPageRegions>

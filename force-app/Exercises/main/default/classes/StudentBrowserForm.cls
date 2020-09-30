@@ -1,4 +1,5 @@
 public with sharing class StudentBrowserForm {
+<<<<<<< HEAD
     @AuraEnabled(cacheable=true)
     public static List<User> getInstructors() 
     {
@@ -8,6 +9,16 @@ public with sharing class StudentBrowserForm {
     @AuraEnabled(cacheable=true)
     public static List<Course_Delivery__c> getDeliveriesByInstructor(String instructorId ) 
     {
+=======
+    
+	@AuraEnabled(cacheable=true)
+	public static List<User> getInstructors() {
+		return [SELECT Id, Name FROM User WHERE Is_Instructor__c = true ORDER BY Name];
+	}
+
+	@AuraEnabled(cacheable=true)
+	public static List<Course_Delivery__c> getDeliveriesByInstructor(String instructorId ) {
+>>>>>>> SLN_04/01.END
 		if (instructorId == '') {
 			return new List<Course_Delivery__c>();
 		} else {
@@ -15,8 +26,17 @@ public with sharing class StudentBrowserForm {
 				SELECT Id, Start_Date__c, Location__c, Attendee_Count__c
 				FROM Course_Delivery__c
 				WHERE Instructor__c = :instructorId AND Status__c IN ('Enrolled','Completed','Delivered','Scheduled')
+<<<<<<< HEAD
 				ORDER BY Start_Date__c DESC
 			];
 		}
     }
+=======
+				WITH SECURITY_ENFORCED
+				ORDER BY Start_Date__c DESC
+			];
+		}
+	}
+
+>>>>>>> SLN_04/01.END
 }
